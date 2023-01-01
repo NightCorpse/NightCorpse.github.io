@@ -61,6 +61,13 @@ a::before{
     transform: scale(1.08); 
 }
 
+.btn:active{
+    transition: transform 0.02s;
+    transform: scale(1); 
+    box-shadow: 5px 5px;
+    background-color: rgb(255, 255, 255);
+}
+
 #section1{
     background-image: url("../assets/img/sus1.png"), url("../assets/img/sus2.png");
     background-repeat: no-repeat;
