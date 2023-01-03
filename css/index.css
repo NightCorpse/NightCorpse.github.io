@@ -92,14 +92,6 @@ a::before{
     text-shadow: 4px 4px black;
 }
 
-#title h1{
-    color:aqua;
-}
-
-#title h3{
-    color: #fff;
-}
-
 #nav2{
     display: flex;
     justify-content: space-between;
