@@ -15,7 +15,7 @@ header{
     border-bottom: 5px solid black;
 }
 
-#amogus{
+#amogusCyan{
 
     border: 2px dashed cyan;
 }
@@ -90,6 +90,14 @@ a::before{
     background-color: #828282;
     box-shadow: 8px 8px;
     text-shadow: 4px 4px black;
+}
+
+#title h1{
+    color:aqua;
+}
+
+#title h3{
+    color: #fff;
 }
 
 #nav2{

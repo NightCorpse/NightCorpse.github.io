@@ -5,24 +5,36 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/sounds.js"></script>
 </head>
 <body>
     <header>
-        <img id="amogus" src="/assets/img/amogus.png">
+        <img id="amogusCyan" src="/assets/img/amogus.png">
             <nav>
             <a href="">RED IS SUS</a>
             <a href="">WHITE IS SUS</a>
             <a href="">I'M SUS</a>
-            <button class="btn" >EJECT IMPOSTER</button>
+            <button class="btn" onclick="playAmogus()">EJECT IMPOSTER</button>
         </nav>
         </header>
     <section id="section1">
+        
+        <!-- Sound Effects -->
+        <audio id="amogus">
+            <source src="/assets/sounds/amogus.mp3" type="audio/mpeg">
+          </audio>
+
+          <audio id="sus">
+            <source src="/assets/sounds/sus.mp3" type="audio/mpeg">
+          </audio>
+        <!----------->
+
          <div id="title">
-            <h1 style="color:aqua">Cyan Amogus</h1><br>
-            <h3 style="color:white">FullStack Imposter<h3>
+            <h1>Cyan Amogus</h1><br>
+            <h3>FullStack Imposter<h3>
             <nav id="nav2">
-                <button class="btn" >EJECT IMPOSTER</button>
-                <button class="btn" >EMERGENCY CALL</button>
+                <button class="btn" onclick="playAmogus()" >EJECT IMPOSTER</button>
+                <button class="btn" onclick="playSus()">EMERGENCY CALL</button>
             </nav>
         </div>
         <span id="separator"></span>
