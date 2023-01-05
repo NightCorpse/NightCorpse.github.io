@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <link id="icon" rel="icon" href="/assets/img/amogusCyan.png">
@@ -9,8 +10,9 @@
     <script src="js/jquery-3.6.3.js"></script>
     <script src="js/imports.js"></script>
     <!------------------------>
-    
+
 </head>
+
 <body>
     <header>
         <img id="amogusCyan" src="/assets/img/amogusCyan.png">
@@ -20,9 +22,9 @@
             <a href="">I'M SUS</a>
             <button class="btn" onclick="playAmogus();sugoma();">EJECT IMPOSTER</button>
         </nav>
-        </header>
+    </header>
     <section id="section1">
-        
+
         <!-- Sound Effects -->
         <audio id="amogus">
             <source src="/assets/sounds/amogus.mp3" type="audio/mpeg">
@@ -32,17 +34,104 @@
             <source src="/assets/sounds/sus.mp3" type="audio/mpeg">
         </audio>
         <!----------->
-        
-         <div class="box">
+
+        <div class="box">
             <h1 id="boxTitle">Cyan Amogus</h1><br>
             <h3 id="boxSubtitle">FullStack Imposter<h3>
-            <nav id="nav2">
-                <button class="btn" onclick="playAmogus(); sugoma();" >EJECT IMPOSTER</button>
-                <button class="btn" onclick="playSus();emergencyCall()">EMERGENCY CALL</button>
-            </nav>
+                    <nav id="nav2">
+                        <button class="btn" onclick="playAmogus(); sugoma();">EJECT IMPOSTER</button>
+                        <button class="btn" onclick="playSus();emergencyCall()">EMERGENCY CALL</button>
+                    </nav>
         </div>
         <span id="sectionSeparator"></span>
-     </section>
+    </section>
+
+    <section id="section2">
+        <div id="sec2Border">
+
+            <h1>Suspectometer</h1>
+
+            
+
+            <div class="skillBox">
+
+                <div id="cyanSus">
+                    <img src="assets/img/cyanSus.png" />
+                    
+                    <div class="susContent">
+                        <span>Cyan</span>
+                        <span class='loader'></span>
+                    </div>
+                    
+                </div>
+
+                <div id="redSus">
+                    <img src="assets/img/redSus.png" />
+                    
+                    <div class="susContent">
+                        <span>Red</span>
+                        <span class='loader'></span>
+                    </div>
+                </div>
+
+                <div id="greenSus">
+                    <img src="assets/img/greenSus.png" />
+
+                    <div class="susContent">
+                        <span>Green</span>
+                        <span class='loader'></span>
+                    </div>
+                </div>
+
+                <div id="blueSus">
+                    <img src="assets/img/blueSus.png" />
+
+                    <div class="susContent">
+                        <span>Blue</span>
+                        <span class='loader'></span>
+                    </div>
+                </div>
+
+                <div id="whiteSus">
+                    <img src="assets/img/whiteSus.png" />
+                    
+                    <div class="susContent">
+                        <span>White</span>
+                        <span class='loader'></span>
+                    </div>
+                </div>
+
+                <div id="blackSus">
+                    <img src="assets/img/blackSus.png" />
+
+                    <div class="susContent">
+                        <span>Black</span>
+                        <span class='loader'></span>
+                    </div>
+                </div>
+
+                <div id="purpleSus">
+                    <img src="assets/img/purpleSus.png" />
+
+                    <div class="susContent">
+                        <span>Purple</span>
+                        <span class='loader'></span>
+                    </div>
+                </div>
+
+                <div id="pinkSus">
+                    <img src="assets/img/pinkSus.png" />
+
+                    <div class="susContent">
+                        <span>Pink</span>
+                        <span class='loader'></span>
+                    </div>
+                </div>
+            
+            </div>
+    </div>
+    </section>
 
 </body>
+
 </html>

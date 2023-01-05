@@ -1,0 +1,113 @@
+#section2{
+    text-align: center;
+    font-family: 'Press Start 2P', monospace;
+    height: 500px;
+    margin: 0px 20%;
+    border-left: black 5px solid;
+    border-right: black 5px solid;
+    border-bottom: black 5px solid;
+    background-color: #808080;
+    padding: 5px
+}
+
+#sec2Border{
+    border: rgb(85, 84, 84) 7px dotted;
+    height: calc(100% - 14px);
+}
+
+#section2 h1{
+    color: white;
+    position: relative;
+    top: 30px;
+    text-shadow: 5px 5px black;
+}
+
+.skillBox{
+    color:white;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 300px 300px;
+    row-gap: 20px;
+    position: relative;
+    top: 80px;
+  
+}
+
+.skillBox div{
+    display:inline-flex;
+    justify-content: center;
+}
+
+.skillBox img{
+    width: 50px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.susContent{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-shadow: 3px 3px black;
+}
+
+.loader{
+    margin-top: 10px;
+    background-color: white;
+    border: black solid;
+    width: 150px;
+    height: 20px;
+}
+
+.loader::after {
+content: "";
+display: flex;
+width: 50%;
+height: 100%;
+background-color: #007A99;
+transition: width 0.3s ease-in-out;
+
+}
+
+.skillBox div:hover .loader::after{
+    width: 100%;
+}
+
+#cyanSus{
+    color: cyan;
+
+
+}
+
+#redSus{
+    color: red;
+}
+
+#greenSus{
+    color: green;
+}
+
+#blueSus{
+    color: blue;
+}
+
+#whiteSus{
+    color: white;
+}
+
+#blackSus{
+    color: black;
+}
+
+#blackSus .susContent{
+    text-shadow: 3px 3px white;
+
+}
+
+#purpleSus{
+    color: #7e33b3;
+}
+
+#pinkSus{
+    color: #f84ca8;
+}
