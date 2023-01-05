@@ -7,6 +7,12 @@ header{
     border-bottom: 5px solid black;
 }
 
+
+#amogusCyan{
+    border:7px ridge cyan;
+    background-color: gray;
+}
+
 #nav1 a{
     display: inline-flex;
     color: white;
