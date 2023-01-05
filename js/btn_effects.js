@@ -1,7 +1,7 @@
-let timer, timer2, timer3, iconTimer;
+let timer, timer2, timer3, iconTimer, iconTimer2;
 
 function sugoma(){
-    clearTimeout(timer);
+    clearTimeout(timer); clearTimeout(iconTimer);
     
     var icon = document.getElementById('icon');
     icon.setAttribute('href' , '/assets/img/sugomaIcon.png' );
@@ -17,11 +17,11 @@ function sugoma(){
 }
 
 function emergencyCall(){
-    clearTimeout(timer2); clearTimeout(timer3); clearTimeout(iconTimer);
+    clearTimeout(timer2); clearTimeout(timer3); clearTimeout(iconTimer2);
     
     var icon = document.getElementById('icon');
     icon.setAttribute('href' , '/assets/img/amogusInverted.png' );
-    iconTimer = setTimeout(function(){icon.setAttribute('href' , '/assets/img/amogusCyan.png' );}, 3000);
+    iconTimer2 = setTimeout(function(){icon.setAttribute('href' , '/assets/img/amogusCyan.png' );}, 3000);
     
     bodyTag = document.getElementsByTagName("BODY")[0];
     bodyTag.style.filter="invert(100%)";
