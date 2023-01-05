@@ -22,6 +22,14 @@
     text-shadow: 4px 4px black;
 }
 
+#title h1{
+    color: aqua;
+}
+
+#title h3{
+    color: white;
+}
+
 #nav2{
     display: flex;
     justify-content: space-between;
