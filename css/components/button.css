@@ -1,0 +1,23 @@
+.btn{
+    font-family: "Fira Code";
+    font-weight: 500;
+    font-size: 15px;
+    box-shadow: 5px 5px;
+    background-color: aqua;
+    height: 50px;
+    width: 150px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: rgb(0, 163, 163);
+    box-shadow: 8px 8px;
+    transform: scale(1.08); 
+}
+
+.btn:active{
+    transition: transform 0.02s;
+    transform: scale(1); 
+    box-shadow: 5px 5px;
+    background-color: rgb(255, 255, 255);
+}
