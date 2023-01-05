@@ -2,4 +2,5 @@ body{
     font-family: "Fira Code";
     font-weight: 500;
     font-size: 20px;
+    background-image: url('../assets/img/background.gif');
 }
