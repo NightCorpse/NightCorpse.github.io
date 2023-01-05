@@ -1,4 +1,4 @@
-#section1{
+#section1 {
     background-image: url("../../assets/img/sus1.png"), url("../../assets/img/sus2.png");
     background-repeat: no-repeat;
     background-position: left, right;
@@ -8,7 +8,7 @@
     border-bottom: #000 5px solid;
 }
 
-#title{
+.box {
     text-align: center;
     font-family: "Press Start 2P", monospace;
     padding: 75px;
@@ -22,22 +22,22 @@
     text-shadow: 4px 4px black;
 }
 
-#title h1{
+#boxTitle{
     color: aqua;
 }
 
-#title h3{
+#boxSubtitle {
     color: white;
 }
 
-#nav2{
+#nav2 {
     display: flex;
     justify-content: space-between;
     position: relative;
     top: 110px;
 }
 
-#separator{
+.separator {
     display: flex;
     background-color: black;
     width: 8px;
@@ -45,5 +45,5 @@
     position: relative;
     left: 52.2%;
     bottom: 22.5%;
-    
+
 }
