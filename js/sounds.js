@@ -7,6 +7,7 @@ function playAmogus() {
 
 function playSus() { 
     var sus = document.getElementById("sus");
+    sus.load();
     sus.volume = 0.2;
     sus.play();
 
