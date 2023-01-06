@@ -22,7 +22,7 @@
     text-shadow: 5px 5px black;
 }
 
-.skillBox{
+.suspectometerBox{
     color:white;
     display: grid;
     justify-content: center;
@@ -33,12 +33,32 @@
   
 }
 
-.skillBox div{
+.suspectometerBox div{
     display:inline-flex;
     justify-content: center;
+    padding: 5px 0;
 }
 
-.skillBox img{
+.suspectometerBox>div:hover{
+    /*outline: 3px dashed white;*/
+    background: 
+    linear-gradient(90deg, #fff 50%, transparent 0) repeat-x,
+    linear-gradient(90deg, #fff 50%, transparent 0) repeat-x,
+    linear-gradient(0deg, #fff 50%, transparent 0) repeat-y,
+    linear-gradient(0deg, #fff 50%, transparent 0) repeat-y;
+background-size: 15px 3px, 15px 3px, 3px 15px, 3px 15px;
+background-position:0 0, 0 100%, 0 0, 100% 0;
+animation: linearGradientMove .3s infinite linear;
+
+}
+
+@keyframes linearGradientMove {
+    100% {
+        background-position: 15px 0, -15px 100%, 0 -15px, 100% 15px;
+    }
+}
+
+.suspectometerBox img{
     width: 50px;
     height: 70px;
     margin-right: 10px;
@@ -62,52 +82,83 @@
 .loader::after {
 content: "";
 display: flex;
-width: 50%;
 height: 100%;
 background-color: #007A99;
 transition: width 0.3s ease-in-out;
 
 }
 
-.skillBox div:hover .loader::after{
+.suspectometerBox div:hover .loader::after{
     width: 100%;
 }
 
-#cyanSus{
+.cyanSus {
     color: cyan;
-
-
 }
 
-#redSus{
+.cyanSus .loader::after{
+    width: 95%;
+}
+
+.redSus{
     color: red;
 }
 
-#greenSus{
+.redSus .loader::after{
+    width: 85%;
+}
+
+.greenSus{
     color: green;
 }
 
-#blueSus{
+.greenSus .loader::after{
+    width: 20%;
+}
+
+.blueSus{
     color: blue;
 }
 
-#whiteSus{
+.blueSus .loader::after{
+    width: 70%;
+}
+
+.whiteSus{
     color: white;
 }
 
-#blackSus{
+.whiteSus .loader::after{
+    width: 5%;
+}
+
+
+.blackSus{
     color: black;
 }
 
-#blackSus .susContent{
+.blackSus .susContent{
     text-shadow: 3px 3px white;
 
 }
 
-#purpleSus{
+.blackSus .loader::after{
+    width: 15%;
+}
+
+.purpleSus{
     color: #7e33b3;
 }
 
-#pinkSus{
+.purpleSus .loader::after{
+    width: 30%;
+}
+
+.pinkSus{
     color: #f84ca8;
 }
+
+.pinkSus .loader::after{
+    width: 60%;
+}
+
